@@ -1,7 +1,7 @@
 # Biography AI 1.0 🤖📖
 
 Turn your lifestories into a storybook!
-这是一个IOS+Web端（API）产品。IOS的swift程序在文件夹AI profile里面，Web的API在文件夹agent里面
+这是一个IOS+Web端（API）产品。IOS的swift程序在文件夹AI profile里面，Web的API在文件夹agent里面。可以在我们的agent框架上开发
 
 关于我为什么要做这个
 ✨我觉得把自己的人生记忆封存到一本书里，不是以日记而是以更丰富的形式留存，如果可以把图文、视频和叙事串联到一起微缩到一起，肯定会是很酷的事（当然你会说bilibili录视频也可以啊～）。我觉得这是非常个人的事情，所以专门造了一个空间。但当时我只花了非常简陋的手写草稿，却一直没有开始做这件事。
@@ -16,6 +16,8 @@ Turn your lifestories into a storybook!
 .
 这时仿佛一切都会变得不同。
 目前在demo阶段，AI和排版功能还没优化//很可能遇到bug//UI还是有的
+
+
 ## ✨ 功能特性
 
 - 🖼️ **图片分析**: 使用AI分析用户上传的照片
