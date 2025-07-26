@@ -17,6 +17,12 @@ Turn your lifestories into a storybook!
 这时仿佛一切都会变得不同。
 目前在demo阶段，AI和排版功能还没优化//很可能遇到bug//UI还是有的
 
+<img width="300" height="652" alt="封面1" src="https://github.com/user-attachments/assets/5fb03221-8d70-422e-9d81-5be43f8a5a52" />
+<img width="300" height="650" alt="封面2" src="https://github.com/user-attachments/assets/0a7e47e8-2a78-4985-a9a9-ea690bc114f5" />
+![封面5](https://github.com/user-attachments/assets/4dd41137-09f1-44c4-ad00-bf0f781cd21f)
+<img width="300" height="650" alt="封面7" src="https://github.com/user-attachments/assets/3f232834-d5bb-4ce6-9b69-d2f87d76e9ec" />
+
+
 
 ## ✨ 功能特性
 
@@ -40,6 +46,7 @@ www.ideaspark.asia
 ## 📞 联系我们
 
 **WeChat QR Code:**
+
 
 ![WeChat QR Code](assets/wechat-qr.png)
 
