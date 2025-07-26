@@ -31,7 +31,8 @@ My Wechat:PRCrecluse
 
 
 你也可以在我们的社区找到我们，我们正在为未来的超级个体们打造一个社区：
-www.ideaspark.asia，我们是Vibe Coding的忠实爱好者，也在不定期举办Meetup
+www.ideaspark.asia
+//我们是Vibe Coding的忠实爱好者，也在不定期举办Meetup
 
 小红书：智创AI工作室
 ## 📞 联系我们
