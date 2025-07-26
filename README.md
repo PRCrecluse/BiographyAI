@@ -28,8 +28,7 @@ Turn your lifestories into a storybook!
 
 ## 联系我们
 My Wechat
-![图片111](https://github.com/user-attachments/assets/9bdce3d7-c1e4-4ee8-8649-0f1782dd6885)
-
+！[微信](wechat-qr.png)
 
 
 
