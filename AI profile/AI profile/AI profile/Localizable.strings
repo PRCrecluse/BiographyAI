@@ -1,0 +1,240 @@
+/* 
+  Localizable.strings (English)
+  AI profile
+*/
+
+// Common
+"Save" = "Save";
+"Cancel" = "Cancel";
+"Settings" = "Settings";
+"OK" = "OK";
+"Done" = "Done";
+
+// Main Interface
+"About" = "About";
+"Assets" = "Assets";
+
+// Personal Info
+"Personal info" = "Personal info";
+"Update your personal information" = "Update your personal information";
+"Name" = "Name";
+"One-line intro" = "One-line intro";
+"Profession" = "Profession";
+"Education/Experience" = "Education/Experience";
+"Link" = "Link";
+"Enter Name" = "Enter Name";
+"Enter One-line intro" = "Enter One-line intro";
+"Enter Profession" = "Enter Profession";
+"Enter Education/Experience" = "Enter Education/Experience";
+"Enter Link" = "Enter Link";
+
+// Language Settings
+"Language setting" = "Language setting";
+"Language Settings" = "Language Settings";
+"Choose your preferred language for the app interface" = "Choose your preferred language for the app interface";
+"Save Language Settings" = "Save Language Settings";
+
+// Appearance Settings
+"Appearance" = "Appearance";
+"Choose your preferred theme" = "Choose your preferred theme";
+"Light" = "Light";
+"Dark" = "Dark";
+"System" = "System";
+"Follow system setting" = "Follow system setting";
+"Always light theme" = "Always light theme";
+"Always dark theme" = "Always dark theme";
+
+// Network Settings
+"Network Settings" = "Network Settings";
+"Current Connection Status" = "Current Connection Status";
+"Connected" = "Connected";
+"Disconnected" = "Disconnected";
+"API Route Selection" = "API Route Selection";
+"Choose the optimal API endpoint based on your location for better performance." = "Choose the optimal API endpoint based on your location for better performance.";
+"China Mainland" = "China Mainland";
+"International" = "International";
+"Optimized for users in mainland China" = "Optimized for users in mainland China";
+"Optimized for international users" = "Optimized for international users";
+"Auto-detect Region" = "Auto-detect Region";
+"Test Connection" = "Test Connection";
+"Connection Test" = "Connection Test";
+"Connection successful!" = "Connection successful!";
+"Connection failed. Please try a different route." = "Connection failed. Please try a different route.";
+
+// Account
+"Sign Out" = "Sign Out";
+"delete account" = "delete account";
+"Delete Account" = "Delete Account";
+"Delete Permanently" = "Delete Permanently";
+"Cancel" = "Cancel";
+"This action cannot be undone. All your data will be permanently deleted." = "This action cannot be undone. All your data will be permanently deleted.";
+"Delete Error" = "Delete Error";
+"OK" = "OK";
+"Unknown error occurred" = "Unknown error occurred";
+"Contact us" = "Contact us";
+"I think this function needs improvement" = "I think this function needs improvement";
+"Mail Unavailable" = "Mail Unavailable";
+"Mail is not configured on this device. Please set up mail in Settings or contact us at: 1765591779@qq.com" = "Mail is not configured on this device. Please set up mail in Settings or contact us at: 1765591779@qq.com";
+"Contact" = "Contact";
+
+// Image Q&A
+"Image Questions" = "Image Questions";
+"Please answer questions about your photos to create a more accurate biography" = "Please answer questions about your photos to create a more accurate biography";
+"What time was this photo taken?" = "What time was this photo taken?";
+"What were you doing in this photo (during this time)?" = "What were you doing in this photo (during this time)?";
+"Enter time (e.g., 2020 summer, childhood, etc.)" = "Enter time (e.g., 2020 summer, childhood, etc.)";
+"Enter what you were doing" = "Enter what you were doing";
+"Next Photo" = "Next Photo";
+"Complete Q&A" = "Complete Q&A";
+"Skip This Photo" = "Skip This Photo";
+"Photo" = "Photo";
+"of" = "of";
+
+// Biography Generator
+"Generate Biography" = "Generate Biography";
+"Biography Requirements" = "Biography Requirements";
+"Describe how you want to write the biography, including style, key content, etc." = "Describe how you want to write the biography, including style, key content, etc.";
+"Template Style" = "Template Style";
+"Language" = "Language";
+"Chinese" = "Chinese";
+"English" = "English";
+"Italian" = "Italian";
+"French" = "French";
+"Classic Style" = "Classic Style";
+"Modern Style" = "Modern Style";
+"Elegant Style" = "Elegant Style";
+"Creative Style" = "Creative Style";
+"Generate" = "Generate";
+"Purchase indicates you agree to our payment terms" = "Purchase indicates you agree to our payment terms";
+"Processing Purchase..." = "Processing Purchase...";
+"Generating... Please wait, about 1 minute" = "Generating... Please wait, about 1 minute";
+
+// Biography
+"My Biographies" = "My Biographies";
+"No biographies yet" = "No biographies yet";
+"Create your first biography to get started" = "Create your first biography to get started";
+"Rename" = "Rename";
+"Change Cover" = "Change Cover";
+"Enter new title" = "Enter new title";
+"Rename Biography" = "Rename Biography";
+"Cover Photo" = "Cover Photo";
+"Choose from Photos" = "Choose from Photos";
+"Take Photo" = "Take Photo";
+"Cover updated successfully" = "Cover updated successfully";
+"Title updated successfully" = "Title updated successfully";
+
+// Community
+"Community" = "Community";
+"Under Development" = "Under Development";
+
+// Home
+"Hello, I'm" = "Hello, I'm";
+"Building tools to amplify\nour imagination." = "Building tools to amplify\nour imagination.";
+
+// Bottom Navigation
+"Profile" = "Profile";
+
+// Top Navigation
+"My Biographies" = "My Biographies";
+"No biographies yet" = "No biographies yet";
+"Create your first biography to get started" = "Create your first biography to get started";
+
+// Biography Generator Extended
+"Upload Images" = "Upload Images";
+"Select up to 10 images to include in your biography" = "Select up to 10 images to include in your biography";
+"Tap to upload images" = "Tap to upload images";
+"images selected" = "images selected";
+"Remove" = "Remove";
+"Replace" = "Replace";
+
+// Additional UI Elements
+"Founder of PromptSpace" = "Founder of PromptSpace";
+"CEO | ZSUI a builder, a designer, a writer" = "CEO | ZSUI a builder, a designer, a writer";
+"Personal Biography" = "Personal Biography";
+"Biography created successfully!" = "Biography created successfully!";
+"Error creating biography" = "Error creating biography";
+"Please try again" = "Please try again";
+"Uploading..." = "Uploading...";
+"Processing..." = "Processing...";
+"Download PDF" = "Download PDF";
+"Share" = "Share";
+"Edit" = "Edit";
+"Delete" = "Delete";
+
+// Settings and Preferences
+"Notifications" = "Notifications";
+"Privacy" = "Privacy";
+"Help & Support" = "Help & Support";
+"About App" = "About App";
+"Version" = "Version";
+"Contact Us" = "Contact Us";
+
+// Error Messages
+"Network Error" = "Network Error";
+"Please check your internet connection" = "Please check your internet connection";
+"Something went wrong" = "Something went wrong";
+"File too large" = "File too large";
+"Invalid file format" = "Invalid file format";
+"Upload failed" = "Upload failed";
+"Cannot load PDF document" = "Cannot load PDF document";
+
+// Success Messages
+"Saved successfully" = "Saved successfully";
+"Updated successfully" = "Updated successfully";
+"Deleted successfully" = "Deleted successfully";
+
+// Common UI
+"Notice" = "Notice";
+"OK" = "OK";
+
+// Important Notes
+"Note: Generation will fail without images and refunds may be difficult. Please make sure to add images." = "Note: Generation will fail without images and refunds may be difficult. Please make sure to add images.";
+"Note: At least 9 photos are required for biography generation." = "Note: At least 9 photos are required for biography generation.";
+"Please upload at least 9 photos to generate a personal biography." = "Please upload at least 9 photos to generate a personal biography.";
+
+// Bottom Navigation & Top Navigation
+"Community" = "Community";
+"About" = "About";
+"Assets" = "Assets";
+"Under Development" = "Under Development";
+
+// Biography Generator
+"Generate Biography" = "Generate Biography";
+"Agent Connected" = "Agent Connected";
+"Agent Disconnected" = "Agent Disconnected";
+"Reconnect" = "Reconnect";
+"Reconnecting..." = "Reconnecting...";
+"Connecting..." = "Connecting...";
+"My Highlights (%d)" = "My Highlights (%d)";
+"Add your highlights (Optional)" = "Add your highlights (Optional)";
+"Upload images to enrich your biography, or skip to create text-only" = "Upload images to enrich your biography, or skip to create text-only";
+"Add" = "Add";
+"Biography Requirements" = "Biography Requirements";
+"Describe how you want to write the biography, including style, key content, etc." = "Describe how you want to write the biography, including style, key content, etc.";
+"Template Style" = "Template Style";
+"Processing Purchase..." = "Processing Purchase...";
+"Generating... Please wait, about 1 minute" = "Generating... Please wait, about 1 minute";
+"Generate" = "Generate";
+"View Results" = "View Results";
+"Generation Progress" = "Generation Progress";
+"Generation Failed" = "Generation Failed";
+
+// Template Names
+"Classic Style" = "Classic Style";
+"Modern Style" = "Modern Style";
+"Elegant Style" = "Elegant Style";
+"Creative Style" = "Creative Style";
+
+// Language Names
+"Chinese" = "Chinese";
+"English" = "English";
+"Italian" = "Italian";
+"French" = "French";
+"Portuguese" = "Portuguese";
+"Spanish" = "Spanish";
+
+// Task Status
+"Submitted" = "Submitted";
+"Processing" = "Processing";
+"Completed" = "Completed";
+"Failed" = "Failed"; 

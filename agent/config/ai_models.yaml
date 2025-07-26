@@ -1,0 +1,256 @@
+# AI模型配置文件
+# 支持多种大模型厂商，便于切换和管理
+# 支持豆包(Doubao)模型的主备方案自动切换
+
+# OpenAI配置
+openai:
+  models:
+    gpt4:
+      provider: "openai"
+      model_name: "gpt-4"
+      api_key: "${OPENAI_API_KEY}"  # 从环境变量读取
+      api_base: "https://api.openai.com/v1"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "GPT-4 文本生成模型"
+      
+    gpt4_vision:
+      provider: "openai"
+      model_name: "gpt-4-vision-preview"
+      api_key: "${OPENAI_API_KEY}"
+      api_base: "https://api.openai.com/v1"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "GPT-4V 图片理解模型"
+
+# Anthropic Claude配置
+anthropic:
+  models:
+    claude3:
+      provider: "anthropic"
+      model_name: "claude-3-sonnet-20240229"
+      api_key: "${ANTHROPIC_API_KEY}"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "Claude-3 Sonnet 文本生成模型"
+      
+    claude3_vision:
+      provider: "anthropic"
+      model_name: "claude-3-sonnet-20240229"
+      api_key: "${ANTHROPIC_API_KEY}"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "Claude-3 图片理解模型"
+
+# 阿里云通义千问配置
+alibaba:
+  models:
+    qwen_max:
+      provider: "alibaba"
+      model_name: "qwen-max"
+      api_key: "${ALIBABA_API_KEY}"
+      api_base: "https://dashscope.aliyuncs.com/api/v1"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "通义千问Max模型"
+      
+    qwen_vl:
+      provider: "alibaba"
+      model_name: "qwen-vl-max"
+      api_key: "${ALIBABA_API_KEY}"
+      api_base: "https://dashscope.aliyuncs.com/api/v1"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "通义千问视觉理解模型"
+
+# 百度文心一言配置
+baidu:
+  models:
+    ernie_bot:
+      provider: "baidu"
+      model_name: "ernie-bot-4"
+      api_key: "${BAIDU_API_KEY}"
+      secret_key: "${BAIDU_SECRET_KEY}"
+      api_base: "https://aip.baidubce.com"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "文心一言4.0模型"
+
+# 智谱AI配置
+zhipu:
+  models:
+    glm4:
+      provider: "zhipu"
+      model_name: "glm-4"
+      api_key: "${ZHIPU_API_KEY}"
+      api_base: "https://open.bigmodel.cn/api/paas/v4"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "智谱GLM-4模型"
+      
+    glm4v:
+      provider: "zhipu"
+      model_name: "glm-4v"
+      api_key: "${ZHIPU_API_KEY}"
+      api_base: "https://open.bigmodel.cn/api/paas/v4"
+      temperature: 0.7
+      max_tokens: 2000
+      timeout: 30
+      description: "智谱GLM-4V视觉模型"
+
+# 默认配置
+default:
+  provider: "doubao"
+  failover_enabled: true
+  max_failures: 3
+  timeout: 60
+
+# 豆包主方案配置
+doubao_primary:
+  name: "豆包主方案"
+  provider: "doubao"
+  base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  api_key: "${DOUBAO_API_KEY}"
+  
+  # 图片理解模型
+  vision_model:
+    model_id: "doubao-vision-pro-32k-241028"
+    max_tokens: 4000
+    temperature: 0.7
+    description: "豆包视觉理解模型，支持图片分析"
+  
+  # 文本生成模型
+  text_model:
+    model_id: "doubao-seed-1-6-250615"
+    max_tokens: 4000
+    temperature: 0.7
+    description: "豆包文本生成模型，支持传记撰写"
+
+# 豆包备用方案配置
+doubao_backup:
+  name: "豆包备用方案"
+  provider: "doubao"
+  base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  api_key: "${DOUBAO_API_KEY}"
+  
+  # 视频/图片理解模型（备用）
+  vision_model:
+    model_id: "doubao-1-5-thinking-vision-pro-250428"
+    max_tokens: 4000
+    temperature: 0.7
+    description: "豆包思维视觉模型，支持复杂图片分析"
+  
+  # 文本生成/优化模型（备用）
+  text_model:
+    model_id: "doubao-seed-1-6-thinking-250615"
+    max_tokens: 4000
+    temperature: 0.7
+    description: "豆包思维文本模型，支持高质量文本生成"
+
+# 模型能力映射
+model_capabilities:
+  image_analysis:
+    primary: "doubao-vision-pro-32k-241028"
+    backup: "doubao-1-5-thinking-vision-pro-250428"
+    
+  text_generation:
+    primary: "doubao-seed-1-6-250615"
+    backup: "doubao-seed-1-6-thinking-250615"
+    
+  text_optimization:
+    primary: "doubao-seed-1-6-250615"
+    backup: "doubao-seed-1-6-thinking-250615"
+    
+  biography_writing:
+    primary: "doubao-seed-1-6-250615"
+    backup: "doubao-seed-1-6-thinking-250615"
+
+# 故障转移配置
+failover:
+  enabled: true
+  max_retries: 3
+  retry_delay: 2  # 秒
+  fallback_timeout: 30  # 秒
+  
+  # 故障判断条件
+  failure_conditions:
+    - "timeout"
+    - "rate_limit"
+    - "api_error"
+    - "authentication_error"
+  
+  # 自动恢复配置
+  auto_recovery:
+    enabled: true
+    check_interval: 300  # 5分钟检查一次主方案是否恢复
+    recovery_threshold: 3  # 连续成功3次后恢复主方案
+
+# 日志配置
+logging:
+  level: "INFO"
+  log_requests: true
+  log_responses: false  # 不记录响应内容（可能包含敏感信息）
+  log_failures: true
+
+# 性能配置
+performance:
+  concurrent_requests: 5
+  request_timeout: 60
+  connection_pool_size: 10
+  
+# 内容安全配置
+content_safety:
+  enabled: true
+  filter_inappropriate: true
+  max_content_length: 10000
+
+# 传记生成特定配置
+biography_settings:
+  default_style: "warm"
+  max_length: 2500
+  min_length: 1500
+  
+  # 支持的风格
+  supported_styles:
+    - "warm"        # 温馨
+    - "professional" # 专业
+    - "literary"    # 文学性
+    - "storytelling" # 故事性
+  
+  # 章节配置
+  chapters:
+    min_chapters: 3
+    max_chapters: 8
+    auto_generate_titles: true
+  
+  # 图片处理
+  image_processing:
+    max_images: 20
+    supported_formats: ["jpg", "jpeg", "png", "webp"]
+    max_file_size: "10MB"
+
+# 使用场景配置
+scenarios:
+  biography_writing:
+    primary_model: "openai.gpt4"
+    vision_model: "openai.gpt4_vision"
+    optimization_model: "anthropic.claude3"
+    description: "个人传记撰写场景推荐配置"
+    
+  image_analysis:
+    primary_model: "openai.gpt4_vision"
+    fallback_models: ["anthropic.claude3_vision", "alibaba.qwen_vl"]
+    description: "图片分析场景推荐配置"
+    
+  text_optimization:
+    primary_model: "anthropic.claude3"
+    fallback_models: ["openai.gpt4", "alibaba.qwen_max"]
+    description: "文本优化场景推荐配置" 

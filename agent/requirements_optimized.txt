@@ -1,0 +1,42 @@
+# Vercel 极致内存优化依赖包
+
+# 核心框架 (轻量级)
+fastapi==0.104.1
+pydantic==2.5.0
+
+# HTTP 客户端 (异步，轻量)
+httpx==0.25.2
+
+# 数据处理 (最小)
+python-multipart==0.0.6
+
+# 配置管理 (轻量)
+python-dotenv==1.0.0
+
+# 图像处理 (PIL/Pillow 是必需的，但比OpenCV轻得多)
+Pillow==10.1.0
+
+# 异步文件操作
+aiofiles==23.2.1
+
+# 以下是Python内置模块，无需安装：
+# - json (JSON处理)
+# - datetime (时间处理) 
+# - os (系统操作)
+# - sys (系统参数)
+# - uuid (UUID生成)
+# - base64 (编码解码)
+# - io (IO操作)
+# - tempfile (临时文件)
+# - asyncio (异步编程)
+# - logging (日志)
+# - typing (类型注解)
+
+# 移除的重型依赖：
+# ❌ reportlab (40MB+) - 已替换为轻量级HTML生成
+# ❌ weasyprint (50MB+) - 已替换为浏览器打印
+# ❌ opencv-python (60MB+) - 已替换为PIL/Pillow
+# ❌ scikit-learn (20MB+) - 不需要机器学习
+# ❌ nltk (15MB+) - 不需要自然语言处理
+# ❌ pandas (30MB+) - 不需要数据分析
+# ❌ numpy (20MB+) - PIL足够处理图像 

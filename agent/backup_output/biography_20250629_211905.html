@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的人生故事</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        
+        .cover-page {
+            text-align: center;
+            padding: 3cm 0;
+            page-break-after: always;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -2cm;
+            padding: 4cm 2cm;
+        }
+        
+        .cover-title {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        
+        .cover-subtitle {
+            font-size: 1.5em;
+            margin-bottom: 2em;
+            opacity: 0.9;
+        }
+        
+        .cover-date {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+            opacity: 0.8;
+        }
+        
+        .cover-image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 400px;
+            margin: 2em auto;
+        }
+        
+        .cover-image-grid img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .toc-page {
+            page-break-after: always;
+            padding: 1cm 0;
+        }
+        
+        .toc-title {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 2em;
+            color: #2C3E50;
+        }
+        
+        .toc-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #E8E8E8;
+        }
+        
+        .toc-date {
+            font-size: 0.9em;
+            color: #7F8C8D;
+            min-width: 100px;
+        }
+        
+        .chapter {
+            margin-bottom: 3em;
+            page-break-before: always;
+        }
+        
+        .chapter-title {
+            font-size: 1.8em;
+            color: #2C3E50;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #3498DB;
+            padding-bottom: 0.5em;
+        }
+        
+        .chapter-time {
+            font-size: 1em;
+            color: #3498DB;
+            margin-bottom: 1.5em;
+        }
+        
+        .chapter-image {
+            text-align: center;
+            margin: 2em 0;
+        }
+        
+        .chapter-image img {
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4em 8px rgba(0,0,0,0.1);
+        }
+        
+        .image-caption {
+            font-size: 0.9em;
+            color: #7F8C8D;
+            margin-top: 0.5em;
+            font-style: italic;
+        }
+        
+        .chapter-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+            margin: 1.5em 0;
+        }
+        
+        .chapter-content p {
+            margin-bottom: 1.2em;
+            text-indent: 2em;
+        }
+        
+        .epilogue {
+            page-break-before: always;
+            text-align: center;
+            padding: 2cm 0;
+        }
+        
+        .brand-footer {
+            position: fixed;
+            bottom: 1cm;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #95A5A6;
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面页 -->
+    <div class="cover-page">
+        <h1 class="cover-title">我的人生故事</h1>
+        <p class="cover-subtitle">A Personal Journey Through Time</p>
+        <p class="cover-date">Created on June 29, 2025</p>
+        <div class="cover-image-grid"><img src="data:image/png;base64,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" alt="封面图片"><img src="data:image/png;base64,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" alt="封面图片"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEsCAIAAABi1XKVAAAFjElEQVR4nO3dzW3bWBhAUWWgIlxBtukgFUwfLiLr9GC3kw7ShXtIFrMQYAj6s4Z6FH3Fc3a2yAeuLt5HSOSXlz8vG4CCf5a+AIBrCRaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkbJe+APi8nrfP+3++/n1d6krYESw44SBV+/+UrQUZCYEMwYJDJ7dXV37KrAQLyBAsIEOwgAzBAjIECw5d/uKCrzUsSLCADF8chRN22yjfdP9sBAvOUqjPxkgIZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkeGsOzO7gdWHneEnPhwQL5nJlp46PV65zBAvG+7+pOnm6bB1zDwsGu7FWw9d5JIIFI42tjGYdMBLCGDPFxXi4zw4LBph7K2SrtSNYcKv71ESzNoIFhAgW3OSeGx+bLMGC6e5fkJU3S7CADMECMgQLJlpqOlvzVChYQIZgARmCBVMsO5etdioULCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsmGLZh6yv9hHvggVkCBaQIVgw0VJz2WrnwY1gASGCBWQIFkx3/+lszfPgRrDgRvcsyMprtREsIESw4Fb32fjYXm0EC4aYuyZqtbNd+gLgQeyaMvxp61K1zw4LRhrbF7U6IFgw2KjKqNUxIyGMd+N4KFXnCBbM5b07V5ZLpz4kWDA7JRrFPSwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBju/QFsIBfP389fXu6cMDb77fvP77nzuLhCdYaPX17+vrv18c7i4dnJAQyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMP35eo7ffbx8ecPzb489/Fg/vy8ufl6WvAeAqRkIgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyNgufQHAWjxvn8999Pr39ZoVBAuY14VOHR9zuVyCBczlmlSdPOVctgQLGG9Cqo5PP86Wm+7AYDfW6sI6ggWMNKpWJ1cTLGCYsbU6XlOwgDHmqNXByoIFZAgWMMB826v99QULyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CAAa58KPuN6wsWkCFYwBjzbbLeVxYsYJg5mrW/pmABI41t1sFqggUMNqpZx+t4zRcw3q41k5/q572EwL1NyJY3PwNLem/QhXJdOUUKFnAnt9/bctMdyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIy/gMkENypeAUXCAAAAABJRU5ErkJggg==" alt="封面图片"><img src="data:image/png;base64,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" alt="封面图片"></div>
+    </div>
+    
+    <!-- 目录页 -->
+    <div class="toc-page">
+        <h2 class="toc-title">人生时光轴</h2>
+        
+            <div class="toc-item">
+                <span class="toc-date">约 2000 年</span>
+                <span>第1章　纯真岁月</span>
+            </div>
+            
+            <div class="toc-item">
+                <span class="toc-date">约 2007 年</span>
+                <span>第2章　求知之路</span>
+            </div>
+            
+            <div class="toc-item">
+                <span class="toc-date">约 2010 年</span>
+                <span>第3章　温暖港湾</span>
+            </div>
+            
+            <div class="toc-item">
+                <span class="toc-date">约 2007 年</span>
+                <span>第4章　求知之路</span>
+            </div>
+            
+            <div class="toc-item">
+                <span class="toc-date">约 2022 年</span>
+                <span>第5章　行走天涯</span>
+            </div>
+            
+            <div class="toc-item">
+                <span class="toc-date">约 2024 年</span>
+                <span>第6章　人生感悟</span>
+            </div>
+            
+    </div>
+    
+    <!-- 章节内容 -->
+    
+            <div class="chapter">
+                <h2 class="chapter-title">第1章　纯真岁月</h2>
+                <p class="chapter-time">⏰ 童年 · 约 2000 年</p>
+                
+                <div class="chapter-image">
+                    <img src="data:image/png;base64,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" alt="章节配图">
+                    <p class="image-caption">珍贵的回忆时光</p>
+                </div>
+                
+                <div class="chapter-content">
+                    <p>童年时光，是我人生中最珍贵的回忆。那时的我，总是充满好奇心，对这个世界的一切都感到新鲜有趣。在家乡的小院子里，我度过了无数个快乐的下午，和小伙伴们一起玩耍，一起探索。</p>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h2 class="chapter-title">第2章　求知之路</h2>
+                <p class="chapter-time">⏰ 学生时代 · 约 2007 年</p>
+                
+                <div class="chapter-image">
+                    <img src="data:image/png;base64,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" alt="章节配图">
+                    <p class="image-caption">珍贵的回忆时光</p>
+                </div>
+                
+                <div class="chapter-content">
+                    <p>学校生活开启了我求知的大门。从第一天踏进校园开始，我就被知识的海洋深深吸引。老师们的耐心教导，同学们的友谊陪伴，让我在学习的路上从不感到孤单。每一次考试的成功，每一个新知识的掌握，都让我感到无比的快乐和成就感。</p>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h2 class="chapter-title">第3章　温暖港湾</h2>
+                <p class="chapter-time">⏰ 家庭生活 · 约 2010 年</p>
+                
+                <div class="chapter-image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEsCAIAAABi1XKVAAAFjElEQVR4nO3dzW3bWBhAUWWgIlxBtukgFUwfLiLr9GC3kw7ShXtIFrMQYAj6s4Z6FH3Fc3a2yAeuLt5HSOSXlz8vG4CCf5a+AIBrCRaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkbJe+APi8nrfP+3++/n1d6krYESw44SBV+/+UrQUZCYEMwYJDJ7dXV37KrAQLyBAsIEOwgAzBAjIECw5d/uKCrzUsSLCADF8chRN22yjfdP9sBAvOUqjPxkgIZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkCBaQIVhAhmABGYIFZAgWkCFYQIZgARmCBWQIFpAhWECGYAEZggVkeGsOzO7gdWHneEnPhwQL5nJlp46PV65zBAvG+7+pOnm6bB1zDwsGu7FWw9d5JIIFI42tjGYdMBLCGDPFxXi4zw4LBph7K2SrtSNYcKv71ESzNoIFhAgW3OSeGx+bLMGC6e5fkJU3S7CADMECMgQLJlpqOlvzVChYQIZgARmCBVMsO5etdioULCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsmGLZh6yv9hHvggVkCBaQIVgw0VJz2WrnwY1gASGCBWQIFkx3/+lszfPgRrDgRvcsyMprtREsIESw4Fb32fjYXm0EC4aYuyZqtbNd+gLgQeyaMvxp61K1zw4LRhrbF7U6IFgw2KjKqNUxIyGMd+N4KFXnCBbM5b07V5ZLpz4kWDA7JRrFPSwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBju/QFsIBfP389fXu6cMDb77fvP77nzuLhCdYaPX17+vrv18c7i4dnJAQyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMP35eo7ffbx8ecPzb489/Fg/vy8ufl6WvAeAqRkIgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CADMECMgQLyNgufQHAWjxvn8999Pr39ZoVBAuY14VOHR9zuVyCBczlmlSdPOVctgQLGG9Cqo5PP86Wm+7AYDfW6sI6ggWMNKpWJ1cTLGCYsbU6XlOwgDHmqNXByoIFZAgWMMB826v99QULyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIyBAvIECwgQ7CAAa58KPuN6wsWkCFYwBjzbbLeVxYsYJg5mrW/pmABI41t1sFqggUMNqpZx+t4zRcw3q41k5/q572EwL1NyJY3PwNLem/QhXJdOUUKFnAnt9/bctMdyBAsIEOwgAzBAjIEC8gQLCBDsIAMwQIy/gMkENypeAUXCAAAAABJRU5ErkJggg==" alt="章节配图">
+                    <p class="image-caption">珍贵的回忆时光</p>
+                </div>
+                
+                <div class="chapter-content">
+                    <p>家庭永远是我最温暖的港湾。父母的无私奉献，兄弟姐妹的相伴成长，让我明白了什么是真正的爱与责任。每当我在外面遇到困难和挫折时，家总是那个让我重新振作起来的地方。家人的支持和理解，是我前进路上最大的动力。</p>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h2 class="chapter-title">第4章　求知之路</h2>
+                <p class="chapter-time">⏰ 学生时代 · 约 2007 年</p>
+                
+                <div class="chapter-image">
+                    <img src="data:image/png;base64,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" alt="章节配图">
+                    <p class="image-caption">珍贵的回忆时光</p>
+                </div>
+                
+                <div class="chapter-content">
+                    <p>踏入职场标志着我人生新阶段的开始。从初出茅庐的青涩学生，到能够独当一面的职业人士，这个转变过程充满了挑战和机遇。每一个项目的完成，每一次问题的解决，都让我更加成熟和自信。同事们的协作，领导的指导，让我在专业道路上不断成长。</p>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h2 class="chapter-title">第5章　行走天涯</h2>
+                <p class="chapter-time">⏰ 旅行经历 · 约 2022 年</p>
+                
+                <div class="chapter-image">
+                    <img src="data:image/png;base64,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" alt="章节配图">
+                    <p class="image-caption">珍贵的回忆时光</p>
+                </div>
+                
+                <div class="chapter-content">
+                    <p>旅行让我的视野变得更加开阔。每一次出发，都是一次心灵的洗礼。无论是繁华都市的现代文明，还是古老村落的传统文化，都给我带来了深刻的思考和感悟。在路上遇到的人和事，都成为了我人生经历中宝贵的财富。</p>
+                </div>
+            </div>
+            
+            <div class="chapter">
+                <h2 class="chapter-title">第6章　人生感悟</h2>
+                <p class="chapter-time">⏰ 个人成长 · 约 2024 年</p>
+                
+                <div class="chapter-content">
+                    <p>回望来路，我深深感激这一路上遇到的所有人和事。每一个阶段都有它独特的意义和价值，每一次经历都让我变得更加完整。未来的路还很长，但我相信，带着这些美好的回忆和经验，我一定能够走得更远，飞得更高。</p>
+                </div>
+            </div>
+            
+    
+    <!-- 结语页 -->
+    <div class="epilogue">
+        <h2>结语</h2>
+        <p>每个人的人生都是一本独特的故事书，记录着成长的足迹，见证着时光的变迁。</p>
+        <p>制作时间：2025年06月29日</p>
+        <p>总章节数：6</p>
+    </div>
+    
+    <div class="brand-footer">made with Profile AI</div>
+</body>
+</html>

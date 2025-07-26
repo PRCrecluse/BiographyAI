@@ -1,0 +1,58 @@
+# Vercel 优化的依赖包列表
+
+# 核心框架
+fastapi==0.104.1
+pydantic==2.5.0
+
+# HTTP 客户端 
+httpx==0.25.2
+aiohttp==3.9.1
+
+# 数据处理
+python-multipart==0.0.6
+
+# 配置管理
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# 基础图像处理 (轻量级)
+Pillow==10.1.0
+
+# 文本处理
+python-dateutil==2.8.2
+
+# 异步支持
+aiofiles==23.2.1
+
+# 数据验证
+marshmallow==3.20.1
+
+# JSON 处理 (内置)
+# json
+
+# 时间处理 (内置)
+# datetime
+
+# 正则表达式 (内置)  
+# re
+
+# 日志 (内置)
+# logging
+
+# 文件系统 (内置)
+# os, sys
+
+# Base64 编码 (内置)
+# base64
+
+# UUID 生成 (内置)
+# uuid
+
+# 注意：以下库在 Vercel 中可能过大或不必要，改为外部服务：
+# reportlab - 改用在线 PDF 生成服务
+# weasyprint - 改用在线 PDF 生成服务  
+# opencv-python - 改用云端图像处理
+# scikit-learn - 移除或改用轻量级替代
+# nltk - 改用云端文本处理
+# openai - 按需加载
+# anthropic - 按需加载 

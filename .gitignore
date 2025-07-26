@@ -1,0 +1,126 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# 环境变量和配置文件
+.env
+.env.local
+.env.production
+.env.development
+*.env
+
+# API密钥和凭据
+**/config/secrets.json
+**/config/credentials.json
+**/*credentials*
+**/*secrets*
+
+# 数据库和日志
+*.db
+*.sqlite
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Output files (keep structure but ignore generated files)
+output/*.pdf
+output/*.html
+output/*.txt
+output/*.json
+!output/.gitkeep
+
+# Uploads (keep structure but ignore uploaded files)
+uploads/*
+!uploads/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+
+# Config files with sensitive data
+config/secrets.yaml
+config/local.yaml
+
+# Vercel
+.vercel 
+.vercel

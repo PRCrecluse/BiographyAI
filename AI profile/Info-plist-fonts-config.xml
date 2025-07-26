@@ -1,0 +1,14 @@
+<key>UIAppFonts</key>
+<array>
+    <string>STSongti-SC-Regular.ttf</string>
+    <string>STSongti-SC-Bold.ttf</string>
+</array>
+
+<!-- 
+使用说明：
+1. 下载华文宋体字体文件：STSongti-SC-Regular.ttf 和 STSongti-SC-Bold.ttf
+2. 将字体文件拖入 Xcode 项目的 Fonts 文件夹中
+3. 确保在添加文件时选择了 "Add to target"
+4. 在 Info.plist 中添加上述 UIAppFonts 配置
+5. 或者在 Xcode 的 Info 标签页中添加 "Fonts provided by application" 键
+--> 

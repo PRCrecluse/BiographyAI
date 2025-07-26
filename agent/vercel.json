@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    },
+    {
+      "src": "static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/health",
+      "dest": "/api/health.py"
+    },
+    {
+      "src": "/api/stats", 
+      "dest": "/api/stats.py"
+    },
+    {
+      "src": "/api/biography/create",
+      "dest": "/api/biography/create.py"
+    },
+    {
+      "src": "/api/biography/creates",
+      "dest": "/api/biography/create.py"
+    },
+    {
+      "src": "/api/biography/status/(.*)",
+      "dest": "/api/biography/status.py"
+    },
+    {
+      "src": "/api/biography/download/(.*)",
+      "dest": "/api/biography/download.py"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.py"
+    }
+  ],
+  "regions": ["hkg1"]
+} 

@@ -1,0 +1,7 @@
+{
+  "build_command": "pip install -r requirements.txt",
+  "start_command": "python -u -v main.py 2>&1",
+  "install_command": "pip install -r requirements.txt",
+  "node_version": "18",
+  "python_version": "3.11"
+}

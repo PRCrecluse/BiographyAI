@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AI profile.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>B3A3ED27F9F03349F56A306BEDEF5382AC8D8A1A</string>
+				<key>dateExpires</key>
+				<string>2026/2/28</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>W2FR952F7Z.IdeasMuseum.AI-profile</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>W2FR952F7Z</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>AI profile.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>f58c5bab-e432-413c-a8cc-2b1743155932</string>
+				<key>dateExpires</key>
+				<string>2026/2/28</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: IdeasMuseum.AI-profile</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>W2FR952F7Z</string>
+				<key>name</key>
+				<string>Yiwei Zhu</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

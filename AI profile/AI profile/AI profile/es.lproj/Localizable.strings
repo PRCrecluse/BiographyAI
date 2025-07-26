@@ -1,0 +1,199 @@
+/* 
+  Localizable.strings (Spanish)
+  AI profile
+*/
+
+// Common
+"Save" = "Guardar";
+"Cancel" = "Cancelar";
+"Settings" = "Configuración";
+"OK" = "OK";
+"Done" = "Hecho";
+
+// Main Interface
+"About" = "Acerca de";
+"Assets" = "Activos";
+
+// Personal Info
+"Personal info" = "Información personal";
+"Update your personal information" = "Actualiza tu información personal";
+"Name" = "Nombre";
+"One-line intro" = "Introducción de una línea";
+"Profession" = "Profesión";
+"Education/Experience" = "Educación/Experiencia";
+"Link" = "Enlace";
+"Enter Name" = "Ingresa el Nombre";
+"Enter One-line intro" = "Ingresa la Introducción";
+"Enter Profession" = "Ingresa la Profesión";
+"Enter Education/Experience" = "Ingresa Educación/Experiencia";
+"Enter Link" = "Ingresa el Enlace";
+
+// Language Settings
+"Language setting" = "Configuración de idioma";
+"Language Settings" = "Configuración de Idioma";
+"Choose your preferred language for the app interface" = "Elige tu idioma preferido para la interfaz de la aplicación";
+"Save Language Settings" = "Guardar Configuración de Idioma";
+
+// Appearance Settings
+"Appearance" = "Apariencia";
+"Choose your preferred theme" = "Elige tu tema preferido";
+"Light" = "Claro";
+"Dark" = "Oscuro";
+"System" = "Sistema";
+"Follow system setting" = "Seguir configuración del sistema";
+"Always light theme" = "Siempre tema claro";
+"Always dark theme" = "Siempre tema oscuro";
+
+// Account
+"Sign Out" = "Cerrar Sesión";
+"delete account" = "eliminar cuenta";
+"Delete Account" = "Eliminar Cuenta";
+"Delete Permanently" = "Eliminar Permanentemente";
+"Cancel" = "Cancelar";
+"This action cannot be undone. All your data will be permanently deleted." = "Esta acción no se puede deshacer. Todos tus datos serán eliminados permanentemente.";
+"Delete Error" = "Error de Eliminación";
+"OK" = "OK";
+"Unknown error occurred" = "Ocurrió un error desconocido";
+
+// Biography Generator
+"Generate Biography" = "Generar Biografía";
+
+"Contact us" = "Contáctanos";
+"I think this function needs improvement" = "Creo que esta función necesita mejoras";
+"Mail Unavailable" = "Correo no disponible";
+"Mail is not configured on this device. Please set up mail in Settings or contact us at: 1765591779@qq.com" = "El correo no está configurado en este dispositivo. Configura el correo en Ajustes o contáctanos en: 1765591779@qq.com";
+"Contact" = "Contacto";
+
+// Image Q&A
+"Image Questions" = "Preguntas sobre imágenes";
+"Please answer questions about your photos to create a more accurate biography" = "Responde preguntas sobre tus fotos para crear una biografía más precisa";
+"What time was this photo taken?" = "¿Cuándo fue tomada esta foto?";
+"What were you doing in this photo (during this time)?" = "¿Qué estabas haciendo en esta foto (durante este tiempo)?";
+"Enter time (e.g., 2020 summer, childhood, etc.)" = "Ingresa el tiempo (ej. verano 2020, infancia, etc.)";
+"Enter what you were doing" = "Ingresa qué estabas haciendo";
+"Next Photo" = "Siguiente foto";
+"Complete Q&A" = "Completar P&R";
+"Skip This Photo" = "Saltar esta foto";
+"Photo" = "Foto";
+"of" = "de";
+
+"Biography Requirements" = "Requisitos de la Biografía";
+"Describe how you want to write the biography, including style, key content, etc." = "Describe cómo quieres escribir la biografía, incluyendo estilo, contenido clave, etc.";
+"Template Style" = "Estilo de Plantilla";
+"Language" = "Idioma";
+"Chinese" = "Chino";
+"English" = "Inglés";
+"Italian" = "Italiano";
+"French" = "Francés";
+"Portuguese" = "Portugués";
+"Spanish" = "Español";
+"Classic Style" = "Estilo Clásico";
+"Modern Style" = "Estilo Moderno";
+"Elegant Style" = "Estilo Elegante";
+"Creative Style" = "Estilo Creativo";
+"Generate" = "Generar";
+"Purchase indicates you agree to our payment terms" = "La compra indica que aceptas nuestros términos de pago";
+"Processing Purchase..." = "Procesando Compra...";
+"Generating... Please wait, about 1 minute" = "Generando... Espera, aproximadamente 1 minuto";
+
+// Biography
+"My Biographies" = "Mis Biografías";
+"No biographies yet" = "Aún no hay biografías";
+"Create your first biography to get started" = "Crea tu primera biografía para comenzar";
+"Rename" = "Renombrar";
+"Change Cover" = "Cambiar Portada";
+"Enter new title" = "Ingresa el nuevo título";
+"Rename Biography" = "Renombrar Biografía";
+"Cover Photo" = "Foto de Portada";
+"Choose from Photos" = "Elegir de Fotos";
+"Take Photo" = "Tomar Foto";
+"Cover updated successfully" = "Portada actualizada exitosamente";
+"Title updated successfully" = "Título actualizado exitosamente";
+
+// Community
+"Community" = "Comunidad";
+"Under Development" = "En Desarrollo";
+
+// Home
+"Hello, I'm" = "Hola, soy";
+"Building tools to amplify\nour imagination." = "Construyendo herramientas para amplificar\nnuestra imaginación.";
+
+// Bottom Navigation
+"Profile" = "Perfil";
+
+// Additional UI Elements
+"Founder of PromptSpace" = "Fundador de PromptSpace";
+"CEO | ZSUI a builder, a designer, a writer" = "CEO | ZSUI un constructor, un diseñador, un escritor";
+"Personal Biography" = "Biografía Personal";
+"Biography created successfully!" = "¡Biografía creada exitosamente!";
+"Error creating biography" = "Error al crear biografía";
+"Please try again" = "Inténtalo de nuevo";
+"Uploading..." = "Subiendo...";
+"Processing..." = "Procesando...";
+"Download PDF" = "Descargar PDF";
+"Share" = "Compartir";
+"Edit" = "Editar";
+"Delete" = "Eliminar";
+
+// Settings and Preferences
+"Notifications" = "Notificaciones";
+"Privacy" = "Privacidad";
+"Help & Support" = "Ayuda y Soporte";
+"About App" = "Acerca de la App";
+"Version" = "Versión";
+"Contact Us" = "Contáctanos";
+
+// Error Messages
+"Network Error" = "Error de Red";
+"Please check your internet connection" = "Verifica tu conexión a internet";
+"Something went wrong" = "Algo salió mal";
+"File too large" = "Archivo demasiado grande";
+"Invalid file format" = "Formato de archivo inválido";
+"Upload failed" = "Fallo en la subida";
+"Cannot load PDF document" = "No se puede cargar el documento PDF";
+
+// Success Messages
+"Saved successfully" = "Guardado exitosamente";
+"Updated successfully" = "Actualizado exitosamente";
+"Deleted successfully" = "Eliminado exitosamente";
+
+// Common UI
+"Notice" = "Aviso";
+
+// Important Notes
+"Note: Generation will fail without images and refunds may be difficult. Please make sure to add images." = "Nota: La generación fallará sin imágenes y los reembolsos pueden ser difíciles. Asegúrate de agregar imágenes.";
+"Note: At least 9 photos are required for biography generation." = "Nota: Se requieren al menos 9 fotos para generar la biografía.";
+"Please upload at least 9 photos to generate a personal biography." = "Por favor sube al menos 9 fotos para generar una biografía personal.";
+
+// Bottom Navigation & Top Navigation
+"Community" = "Comunidad";
+"About" = "Acerca de";
+"Assets" = "Activos";
+"Under Development" = "En Desarrollo";
+
+// Biography Generator Extended
+"Agent Connected" = "Agente Conectado";
+"Agent Disconnected" = "Agente Desconectado";
+"Reconnect" = "Reconectar";
+"Reconnecting..." = "Reconectando...";
+"Connecting..." = "Conectando...";
+"My Highlights (%d)" = "Mis Destacados (%d)";
+"Add your highlights (Optional)" = "Añade tus destacados (Opcional)";
+"Upload images to enrich your biography, or skip to create text-only" = "Sube imágenes para enriquecer tu biografía, o salta para crear solo texto";
+"Add" = "Añadir";
+"Upload Images" = "Subir Imágenes";
+"Select up to 10 images to include in your biography" = "Selecciona hasta 10 imágenes para incluir en tu biografía";
+"Tap to upload images" = "Toca para subir imágenes";
+"images selected" = "imágenes seleccionadas";
+"Remove" = "Remover";
+"Replace" = "Reemplazar";
+"View Results" = "Ver Resultados";
+"Generation Progress" = "Progreso de Generación";
+"Generation Failed" = "Generación Fallida";
+"Choose your preferred language" = "Elige tu idioma preferido";
+
+// Task Status
+"Submitted" = "Enviado";
+"Processing" = "Procesando";
+"Completed" = "Completado";
+"Failed" = "Fallido"; 

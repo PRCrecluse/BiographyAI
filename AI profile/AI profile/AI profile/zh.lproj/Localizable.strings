@@ -1,0 +1,199 @@
+/* 
+  Localizable.strings (Chinese)
+  AI profile
+*/
+
+// Common
+"Save" = "保存";
+"Cancel" = "取消";
+"Settings" = "设置";
+"OK" = "确定";
+"Done" = "完成";
+
+// Main Interface
+"About" = "关于";
+"Assets" = "资产";
+
+// Personal Info
+"Personal info" = "个人信息";
+"Update your personal information" = "更新您的个人信息";
+"Name" = "姓名";
+"One-line intro" = "一句话介绍";
+"Profession" = "职业";
+"Education/Experience" = "教育/经历";
+"Link" = "链接";
+"Enter Name" = "输入姓名";
+"Enter One-line intro" = "输入一句话介绍";
+"Enter Profession" = "输入职业";
+"Enter Education/Experience" = "输入教育/经历";
+"Enter Link" = "输入链接";
+
+// Language Settings
+"Language setting" = "语言设置";
+"Language Settings" = "语言设置";
+"Choose your preferred language for the app interface" = "选择您偏好的应用界面语言";
+"Save Language Settings" = "保存语言设置";
+
+// Appearance Settings
+"Appearance" = "外观";
+"Choose your preferred theme" = "选择您偏好的主题";
+"Light" = "浅色";
+"Dark" = "深色";
+"System" = "系统";
+"Follow system setting" = "跟随系统设置";
+"Always light theme" = "始终浅色主题";
+"Always dark theme" = "始终深色主题";
+
+// Network Settings
+"Network Settings" = "网络设置";
+"Current Connection Status" = "当前连接状态";
+"Connected" = "已连接";
+"Disconnected" = "已断开";
+"API Route Selection" = "API路由选择";
+"Choose the optimal API endpoint based on your location for better performance." = "根据您的位置选择最佳API端点以获得更好的性能。";
+"China Mainland" = "中国大陆";
+"International" = "国际";
+"Optimized for users in mainland China" = "为中国大陆用户优化";
+"Optimized for international users" = "为国际用户优化";
+"Auto-detect Region" = "自动检测地区";
+"Test Connection" = "测试连接";
+"Connection Test" = "连接测试";
+"Connection successful!" = "连接成功！";
+"Connection failed. Please try a different route." = "连接失败。请尝试不同的路由。";
+
+// Account
+"Sign Out" = "退出登录";
+"delete account" = "删除账户";
+"Delete Account" = "删除账户";
+"Delete Permanently" = "永久删除";
+"Cancel" = "取消";
+"This action cannot be undone. All your data will be permanently deleted." = "此操作无法撤销。您的所有数据将被永久删除。";
+"Delete Error" = "删除错误";
+"OK" = "确定";
+"Unknown error occurred" = "发生未知错误";
+"Contact us" = "联系我们";
+"I think this function needs improvement" = "我认为这个功能需要改进";
+"Mail Unavailable" = "邮件不可用";
+"Mail is not configured on this device. Please set up mail in Settings or contact us at: 1765591779@qq.com" = "此设备未配置邮件。请在设置中设置邮件或通过以下方式联系我们：1765591779@qq.com";
+"Contact" = "联系";
+
+// Image Q&A
+"Image Questions" = "图片问答";
+"Please answer questions about your photos to create a more accurate biography" = "请回答关于您照片的问题以创建更准确的传记";
+"What time was this photo taken?" = "这张照片是什么时候拍的？";
+"What were you doing in this photo (during this time)?" = "您在这张照片中（在这个时期）在做什么？";
+"Enter time (e.g., 2020 summer, childhood, etc.)" = "输入时间（例如：2020年夏天、童年等）";
+"Enter what you were doing" = "输入您在做什么";
+"Next Photo" = "下一张照片";
+"Complete Q&A" = "完成问答";
+"Skip This Photo" = "跳过这张照片";
+"Photo" = "照片";
+"of" = "的";
+
+// Biography Generator
+"Generate Biography" = "生成传记";
+"Biography Requirements" = "传记要求";
+"Describe how you want to write the biography, including style, key content, etc." = "描述您希望如何撰写传记，包括风格、关键内容等。";
+"Template Style" = "模板风格";
+"Language" = "语言";
+"Chinese" = "中文";
+"English" = "英语";
+"Italian" = "意大利语";
+"French" = "法语";
+"Classic Style" = "经典风格";
+"Modern Style" = "现代风格";
+"Elegant Style" = "优雅风格";
+"Creative Style" = "创意风格";
+"Generate" = "生成";
+"Purchase indicates you agree to our payment terms" = "购买表示您同意我们的付款条款";
+
+// Additional UI Elements
+"Founder of PromptSpace" = "PromptSpace创始人";
+"CEO | ZSUI a builder, a designer, a writer" = "CEO | ZSUI 建设者、设计师、作家";
+"Personal Biography" = "个人传记";
+"Biography created successfully!" = "传记创建成功！";
+"Error creating biography" = "创建传记时出错";
+"Please try again" = "请重试";
+"Uploading..." = "上传中...";
+"Processing..." = "处理中...";
+"Download PDF" = "下载PDF";
+"Share" = "分享";
+"Edit" = "编辑";
+"Delete" = "删除";
+
+// Settings and Preferences
+"Notifications" = "通知";
+"Privacy" = "隐私";
+"Help & Support" = "帮助与支持";
+"About App" = "关于应用";
+"Version" = "版本";
+"Contact Us" = "联系我们";
+
+// Error Messages
+"Network Error" = "网络错误";
+"Please check your internet connection" = "请检查您的网络连接";
+"Something went wrong" = "出现了问题";
+"File too large" = "文件过大";
+"Invalid file format" = "无效的文件格式";
+"Upload failed" = "上传失败";
+"Cannot load PDF document" = "无法加载PDF文档";
+
+// Success Messages
+"Saved successfully" = "保存成功";
+"Updated successfully" = "更新成功";
+"Deleted successfully" = "删除成功";
+
+// Common UI
+"Notice" = "注意";
+"OK" = "确定";
+
+// Important Notes
+"Note: Generation will fail without images and refunds may be difficult. Please make sure to add images." = "注意：没有图片生成将失败，退款可能困难。请确保添加图片。";
+"Note: At least 9 photos are required for biography generation." = "注意：生成传记至少需要9张照片。";
+"Please upload at least 9 photos to generate a personal biography." = "请上传至少9张照片以生成个人传记。";
+
+// Bottom Navigation & Top Navigation
+"Community" = "社区";
+"About" = "关于";
+"Assets" = "资产";
+"Under Development" = "开发中";
+
+// Biography Generator Extended
+"Agent Connected" = "代理已连接";
+"Agent Disconnected" = "代理已断开";
+"Reconnect" = "重新连接";
+"Reconnecting..." = "重新连接中...";
+"Connecting..." = "连接中...";
+"My Highlights (%d)" = "我的亮点 (%d)";
+"Add your highlights (Optional)" = "添加您的亮点（可选）";
+"Upload images to enrich your biography, or skip to create text-only" = "上传图片丰富您的传记，或跳过创建纯文本";
+"Add" = "添加";
+"Biography Requirements" = "传记要求";
+"Describe how you want to write the biography, including style, key content, etc." = "描述您希望如何撰写传记，包括风格、关键内容等。";
+"Template Style" = "模板风格";
+"Processing Purchase..." = "处理购买中...";
+"Generating... Please wait, about 1 minute" = "生成中... 请稍候，大约1分钟";
+"Generate" = "生成";
+"View Results" = "查看结果";
+"Generation Progress" = "生成进度";
+"Generation Failed" = "生成失败";
+
+// Template Names
+"Classic Style" = "经典风格";
+"Modern Style" = "现代风格";
+"Elegant Style" = "优雅风格";
+"Creative Style" = "创意风格";
+
+// Language Names
+"Chinese" = "中文";
+"English" = "英语";
+"Italian" = "意大利语";
+"French" = "法语";
+"Portuguese" = "葡萄牙语";
+"Spanish" = "西班牙语";
+
+// Task Status
+"Submitted" = "已提交";
+"Processing" = "处理中";
+"Completed" = "已完成";
+"Failed" = "失败";
