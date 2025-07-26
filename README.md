@@ -28,6 +28,10 @@ Turn your lifestories into a storybook!
 
 ## 联系我们
 My Wechat
+![图片111](https://github.com/user-attachments/assets/9bdce3d7-c1e4-4ee8-8649-0f1782dd6885)
+
+
+
 
 你也可以在我们的社区找到我们，我们正在为未来的超级个体们打造一个社区：
 www.ideaspark.asia，我们是Vibe Coding的忠实爱好者，也在不定期举办Meetup
