@@ -28,8 +28,6 @@ Turn your lifestories into a storybook!
 
 ## 联系我们
 My Wechat
-！[微信](wechat-qr.png)
-
 
 
 你也可以在我们的社区找到我们，我们正在为未来的超级个体们打造一个社区：
