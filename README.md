@@ -1,7 +1,21 @@
 # Biography AI 1.0 🤖📖
 
-一个智能个人传记生成系统，使用AI技术根据用户上传的图片和描述自动生成精美的PDF传记。
+Turn your lifestories into a storybook!
 
+
+关于我为什么要做这个
+✨我觉得把自己的人生记忆封存到一本书里，不是以日记而是以更丰富的形式留存，如果可以把图文、视频和叙事串联到一起微缩到一起，肯定会是很酷的事（当然你会说bilibili录视频也可以啊～）。我觉得这是非常个人的事情，所以专门造了一个空间。但当时我只花了非常简陋的手写草稿，却一直没有开始做这件事。
+ 
+·如果你的人生故事可以直接打印出来变成一本书，你一定非常愿意看（划掉）或者，
+当你垂垂老矣，
+坐在床边，
+伴着些许烛光，
+用已经染上浊黄的双眼，
+轻启扉页…
+.
+.
+这时仿佛一切都会变得不同。
+目前在demo阶段，AI和排版功能还没优化（几乎只有UI壳子还是拼了命做出来的一点点md登录注册还要加）but27号会在Github开源，欢迎大家来看～
 ## ✨ 功能特性
 
 - 🖼️ **图片分析**: 使用AI分析用户上传的照片
@@ -11,172 +25,191 @@
 - 📱 **API接口**: 提供完整的RESTful API
 - ☁️ **云部署**: 支持Vercel无服务器部署
 
-## 🚀 快速开始
 
-### 本地开发
+## 联系我们
+My Wechat
 
-1. **克隆仓库**
+你也可以在我们的社区找到我们，我们正在为未来的超级个体们打造一个社区：
+www.ideaspark.asia，我们是Vibe Coding的忠实爱好者，也在不定期举办Meetup
+
+小红书：智创AI工作室
+## 📞 联系我们
+
+**WeChat QR Code:**
+
+![WeChat QR Code](assets/wechat-qr.png)
+
+你也可以在我们的社区找到我们，我们正在为未来的超级个体们打造一个社区：
+www.ideaspark.asia，我们是Vibe Coding的忠实爱好者，也在不定期举办Meetup
+
+小红书：智创AI工作室
+
+## 🚀 Quick Start
+
+### Local Development
+
+1. **Clone Repository**
 ```bash
-git clone git@github.com:PRCrecluse/Biography-AI1.0-.git
-cd Biography-AI1.0-
+git clone git@github.com:PRCrecluse/BiographyAI.git
+cd BiographyAI
 ```
 
-2. **安装依赖**
+2. **Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **配置环境变量**
-创建 `.env` 文件：
+3. **Configure Environment Variables**
+Create `.env` file:
 ```env
 OPENAI_API_KEY=your_openai_api_key
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_supabase_key
 ```
 
-4. **启动服务**
+4. **Start Service**
 ```bash
 python dashboard_server.py
 ```
 
-服务将在 `http://localhost:8000` 启动
+Service will start at `http://localhost:8000`
 
-### Vercel部署
+### Vercel Deployment
 
-1. **Fork此仓库到你的GitHub账户**
+1. **Fork this repository to your GitHub account**
 
-2. **在Vercel中导入项目**
-   - 登录 [Vercel](https://vercel.com)
-   - 点击 "New Project"
-   - 导入你fork的仓库
+2. **Import project in Vercel**
+   - Login to [Vercel](https://vercel.com)
+   - Click "New Project"
+   - Import your forked repository
 
-3. **配置环境变量**
-   在Vercel项目设置中添加：
+3. **Configure Environment Variables**
+   Add in Vercel project settings:
    - `OPENAI_API_KEY`
    - `SUPABASE_URL`
    - `SUPABASE_KEY`
 
-4. **部署**
-   Vercel会自动部署，使用配置文件 `vercel.json`
+4. **Deploy**
+   Vercel will automatically deploy using `vercel.json` configuration
 
-## 📊 API文档
+## 📊 API Documentation
 
-### 健康检查
+### Health Check
 ```
 GET /api/health
 ```
 
-### 创建传记
+### Create Biography
 ```
 POST /api/biography/create
 Content-Type: multipart/form-data
 
-参数:
-- user_requirements: 用户需求描述
-- template_style: 模板风格 (classic/modern/elegant/creative)
-- language: 语言 (zh-CN/en/it/fr/pt/es)
-- files: 图片文件 (可选)
+Parameters:
+- user_requirements: User requirements description
+- template_style: Template style (classic/modern/elegant/creative)
+- language: Language (zh-CN/en/it/fr/pt/es)
+- files: Image files (optional)
 ```
 
-### 查询状态
+### Query Status
 ```
 GET /api/biography/status/{task_id}
 ```
 
-### 下载传记
+### Download Biography
 ```
 GET /api/biography/download/{task_id}
 ```
 
-### 获取统计
+### Get Statistics
 ```
 GET /api/stats
 ```
 
-## 🏗️ 项目结构
+## 🏗️ Project Structure
 
 ```
-├── api/                    # API路由
-│   ├── biography/          # 传记相关API
-│   ├── health.py          # 健康检查
-│   ├── stats.py           # 统计API
-│   └── main.py            # FastAPI主应用
-├── core/                   # 核心模块
+├── api/                    # API routes
+│   ├── biography/          # Biography related APIs
+│   ├── health.py          # Health check
+│   ├── stats.py           # Statistics API
+│   └── main.py            # FastAPI main application
+├── core/                   # Core modules
 │   ├── agent_orchestrator.py
 │   └── models.py
-├── services/               # 服务层
+├── services/               # Service layer
 │   ├── ai_service.py
 │   └── file_service.py
-├── tools/                  # 工具模块
+├── tools/                  # Tool modules
 │   ├── image_analyzer.py
 │   ├── pdf_generator.py
 │   ├── text_generator.py
 │   └── qr_generator.py
-├── config/                 # 配置文件
-├── static/                 # 静态文件
-├── uploads/                # 上传文件目录
-├── output/                 # 输出文件目录
-├── dashboard_server.py     # 主服务器
-├── vercel.json            # Vercel配置
-└── requirements.txt       # Python依赖
+├── config/                 # Configuration files
+├── static/                 # Static files
+├── uploads/                # Upload directory
+├── output/                 # Output directory
+├── dashboard_server.py     # Main server
+├── vercel.json            # Vercel configuration
+└── requirements.txt       # Python dependencies
 ```
 
-## 🔧 技术栈
+## 🔧 Tech Stack
 
-- **后端**: FastAPI, Python 3.8+
-- **AI服务**: OpenAI GPT-4, Vision API
-- **数据库**: Supabase
-- **PDF生成**: ReportLab
-- **图片处理**: Pillow
-- **部署**: Vercel, Uvicorn
-- **容器化**: Docker支持
+- **Backend**: FastAPI, Python 3.8+
+- **AI Services**: OpenAI GPT-4, Vision API
+- **Database**: Supabase
+- **PDF Generation**: ReportLab
+- **Image Processing**: Pillow
+- **Deployment**: Vercel, Uvicorn
+- **Containerization**: Docker support
 
-## 📝 使用示例
+## 📝 Usage Example
 
 ```python
 import requests
 
-# 创建传记
+# Create biography
 response = requests.post('http://localhost:8000/api/biography/create', 
     data={
-        'user_requirements': '描述我的人生故事',
+        'user_requirements': 'Describe my life story',
         'template_style': 'modern',
-        'language': 'zh-CN'
+        'language': 'en'
     },
     files={'files': open('photo.jpg', 'rb')}
 )
 
 task_id = response.json()['task_id']
 
-# 查询状态
+# Query status
 status = requests.get(f'http://localhost:8000/api/biography/status/{task_id}')
 
-# 下载PDF
+# Download PDF
 if status.json()['status'] == 'completed':
     pdf = requests.get(f'http://localhost:8000/api/biography/download/{task_id}')
     with open('biography.pdf', 'wb') as f:
         f.write(pdf.content)
 ```
 
-## 🤝 贡献指南
+## 🤝 Contributing
 
-1. Fork本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启Pull Request
+1. Fork this repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 许可证
+## 📄 License
 
-本项目采用MIT许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## 📞 联系方式
+## 📞 Contact
 
 - Email: 1765591779@qq.com
 - GitHub: [@PRCrecluse](https://github.com/PRCrecluse)
 
-## 🙏 致谢
+## 🙏 Acknowledgments
 
-- OpenAI提供的强大AI服务
-- Supabase提供的数据库服务
-- Vercel提供的部署平台 # BiographyAI
+- OpenAI for powerful AI services
+- Supabase for database services
+- Vercel for deployment platform
